@@ -1,84 +1,173 @@
-import Box from '@mui/material/Box';
-import * as React from 'react';
-import ImageList from '@mui/material/ImageList';
-import ImageListItem from '@mui/material/ImageListItem';
-export default function Category() {
+import { Card, CardContent, Box, Typography, Button } from "@mui/material";
+
+function ImageCard1() {
     return (
-        <>
-            <Box>
-<StandardImageList/>
-            </Box>
-           
-        </>
-    )
-}
+        <Card sx={{ width: 500, p: 2 }}>
+            <CardContent>
+                <Typography variant="h5" sx={{ mb: 2 }}>
+                    Revamp your home in style
+                </Typography>
 
 
+                <Box sx={{ display: "flex", justifyContent: "space-between", mb: 2 }}>
 
-export function StandardImageList() {
-    return (
-        <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
-            {itemData.map((item) => (
-                <ImageListItem key={item.img}>
-                    <img
-                        srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-                        src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
-                        alt={item.title}
-                        loading="lazy"
-                    />
-                </ImageListItem>
-            ))}
-        </ImageList>
+                    <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+                        <Box
+                            component="img"
+                            src="category.jpg"
+                            alt="Cushion Cover"
+                            sx={{ width: 140, height: 140, borderRadius: 2 }}
+                        />
+                        <Typography variant="body2" sx={{ mt: 1 }}>
+                            Cushion Cover, Bedsheet & More
+                        </Typography>
+                    </Box>
+
+
+                    <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+                        <Box
+                            component="img"
+                            src="category2.jpg"
+                            alt="Home Storage"
+                            sx={{ width: 140, height: 140, borderRadius: 2 }}
+                        />
+                        <Typography variant="body2" sx={{ mt: 1 }}>
+                            Home Storage
+                        </Typography>
+                    </Box>
+                </Box>
+
+
+                <Box sx={{ display: "flex", justifyContent: "center" }}>
+                    <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+                        <Box
+                            component="img"
+                            src="category3.jpg"
+                            alt="Lighting"
+                            sx={{ width: 140, height: 140, objectFit: "cover", borderRadius: 2 }}
+                        />
+                        <Typography variant="body2" sx={{ mt: 1 }}>
+                            Lighting Solutions
+                        </Typography>
+                    </Box>
+                </Box>
+            </CardContent>
+            <Button >Explore All</Button>
+        </Card>
     );
 }
 
-const itemData = [
-    {
-        img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
-        title: 'Breakfast',
-    },
-    {
-        img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
-        title: 'Burger',
-    },
-    {
-        img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
-        title: 'Camera',
-    },
-    {
-        img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
-        title: 'Coffee',
-    },
-    {
-        img: 'https://images.unsplash.com/photo-1533827432537-70133748f5c8',
-        title: 'Hats',
-    },
-    {
-        img: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62',
-        title: 'Honey',
-    },
-    {
-        img: 'https://images.unsplash.com/photo-1516802273409-68526ee1bdd6',
-        title: 'Basketball',
-    },
-    {
-        img: 'https://images.unsplash.com/photo-1518756131217-31eb79b20e8f',
-        title: 'Fern',
-    },
-    {
-        img: 'https://images.unsplash.com/photo-1597645587822-e99fa5d45d25',
-        title: 'Mushrooms',
-    },
-    {
-        img: 'https://images.unsplash.com/photo-1567306301408-9b74779a11af',
-        title: 'Tomato basil',
-    },
-    {
-        img: 'https://images.unsplash.com/photo-1471357674240-e1a485acb3e1',
-        title: 'Sea star',
-    },
-    {
-        img: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6',
-        title: 'Bike',
-    },
-];
+function ImageCard2() {
+    return (
+        <Card sx={{ width: 500, p: 2 }}>
+            <CardContent>
+                <Typography variant="h5" sx={{ mb: 2 }}>
+                    Appliances for your home | Up to 55% off
+                </Typography>
+
+
+                <Box sx={{ display: "flex", justifyContent: "space-between", mb: 2 }}>
+
+                    <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+                        <Box
+                            component="img"
+                            src="image4.jpg"
+                            alt="Cushion Cover"
+                            sx={{ width: 140, height: 140, borderRadius: 2 }}
+                        />
+                        <Typography variant="body2" sx={{ mt: 1 }}>
+                            Cushion Cover, Bedsheet & More
+                        </Typography>
+                    </Box>
+
+
+                    <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+                        <Box
+                            component="img"
+                            src="image5.jpg"
+                            alt="Home Storage"
+                            sx={{ width: 140, height: 140, borderRadius: 2 }}
+                        />
+                        <Typography variant="body2" sx={{ mt: 1 }}>
+                            Home Storage
+                        </Typography>
+                    </Box>
+                </Box>
+
+
+                <Box sx={{ display: "flex", justifyContent: "center" }}>
+                    <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+                        <Box
+                            component="img"
+                            src="image6.jpg"
+                            alt="Lighting"
+                            sx={{ width: 140, height: 140, objectFit: "cover", borderRadius: 2 }}
+                        />
+                        <Typography variant="body2" sx={{ mt: 1 }}>
+                            Lighting Solutions
+                        </Typography>
+                    </Box>
+                </Box>
+            </CardContent>
+            <Button >Explore All</Button>
+        </Card>
+    );
+}
+
+function ImageCard3() {
+    return (
+        <Card sx={{ width: 500, p: 2 }}>
+            <CardContent>
+                <Typography variant="h5" sx={{ mb: 2 }}>
+                    Starting ₹149 | Headphones
+                </Typography>
+
+
+                <Box sx={{ display: "flex", justifyContent: "space-between", mb: 2 }}>
+
+                    <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+                        <Box
+                            component="img"
+                            src="image7.jpg"
+                            alt="Cushion Cover"
+                            sx={{ width: 140, height: 140, borderRadius: 2 }}
+                        />
+                        <Typography variant="body2" sx={{ mt: 1 }}>
+                            Starting ₹249 | boAt
+                        </Typography>
+                    </Box>
+
+
+                    <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+                        <Box
+                            component="img"
+                            src="image8.jpg"
+                            alt="Home Storage"
+                            sx={{ width: 140, height: 140, borderRadius: 2 }}
+                        />
+                        <Typography variant="body2" sx={{ mt: 1 }}>
+                            Starting ₹649 | Noise
+                        </Typography>
+                    </Box>
+                </Box>
+
+
+                <Box sx={{ display: "flex", justifyContent: "center" }}>
+                    <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+                        <Box
+                            component="img"
+                            src="image9.jpg"
+                            alt="Lighting"
+                            sx={{ width: 140, height: 140, objectFit: "cover", borderRadius: 2 }}
+                        />
+                        <Typography variant="body2" sx={{ mt: 1 }}>
+                            Starting ₹149 | Zebronics
+                        </Typography>
+                    </Box>
+                </Box>
+            </CardContent>
+            <Button >Explore All</Button>
+        </Card>
+    );
+}
+export { ImageCard1, ImageCard2, ImageCard3 } 
