@@ -36,10 +36,8 @@ export default function ProductCarousel() {
             showDots={true}
             arrows={true}
         >
-
             <div style={{ background: "white", padding: "40px", textAlign: "center", }}><img src="category.jpg" alt="" /></div>
             <div style={{ background: "white", padding: "40px", textAlign: "center", }}><img src="category.jpg" alt="" /></div>
-            <div style={{ background: "white", padding: "40px", textAlign: "center" }}><img src="category.jpg" alt="" /></div>
             <div style={{ background: "white", padding: "40px", textAlign: "center" }}><img src="category.jpg" alt="" /></div>
 
         </Carousel>

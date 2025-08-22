@@ -6,7 +6,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
-import { Autocomplete, Button, Menu, MenuItem, OutlinedInput, Paper, Stack, TextField } from '@mui/material';
+import { Autocomplete, Button, Menu, MenuItem, InputBase, Paper, Stack, TextField } from '@mui/material';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
@@ -18,34 +18,71 @@ const data = ["All", "Electronics", "Books", "Furniture", "Jeweelery", "Clothing
 export default function DenseAppBar() {
     return (
         <>
-            <Box sx={{ width: "100%", height: "70px", background: "#232F3E", display: "flex", alignItems: "center", gap: 4,position:"static" }}>
+            <Box sx={{ width: "100%", height: "70px", background: "#232F3E", display: "flex", alignItems: "center", gap: 4, position: "static" }}>
                 <Box id="logo-box">
-                    <img  src="amazon.png" alt="Logo" width="100%" height="50px" />
+                    <img src="amazon.png" alt="Logo" width="100%" height="50px" />
                 </Box>
+              
                 <Box className="box">
-                    <Typography color="grey">Delivering to Chandigrah 160019</Typography>
+                    <Typography sx={{ fontSize: "12px" }} color="grey">Delivering to Chandigrah 160019</Typography>
                     <Typography sx={{ color: "white", fontSize: "14px", fontWeight: 700 }}> <LocationOnIcon />Update location</Typography>
                 </Box>
-                <Box >
+                
+                
+
+
+
+                {/* <Box >
                     <Stack direction={"row"}>
                         <Box className="searchBox">
                             <Autocomplete
                                 disablePortal
                                 options={data}
-                                sx={{ width: 200, bgcolor: "#e6e6e6;" }}
+                                sx={{ width: "auto", height: "35px", bgcolor: "#e6e6e6;" }}
                                 renderInput={(params) => <TextField {...params} label="All" />}
                             />
                         </Box>
-                        <OutlinedInput className="searchBox" sx={{ width: "700px", bgcolor: "white" }} placeholder="Search Amazon.in" />
-
+                        <InputBase className="searchBox" sx={{ width: "700px", bgcolor: "white" }} placeholder="Search Amazon.in" />
                         <Box className="searchBox" sx={{ bgcolor: "#FEBD69", border: "2px solid black", width: "40px", display: "flex", alignItems: "center" }}><IconButton><SearchIcon /></IconButton></Box>
                     </Stack>
+                </Box> */}
+                 <div style={{
+                    display: "flex", flexDirection: "row", justifyContent: "center", padding: "10px 4px 10px 3px",
+                    height: "60px",
+                    borderRadius: "10px"
+                }}>
+                    <div >
+                        <select name="category" id="cat" style={{ height: "40px", borderRadius: "8% 0% 0% 8%", width: "58px" }}>
+                            <option value="All">All</option>
+                            <option value="Electronics">Electronics</option>
+                            <option value="Books">Books</option>
+                            <option value="Furniture">Furniture</option>
+                            <option value="Jeweelery">Jeweelery</option>
+                        </select></div>
+
+                    <div><input style={{ height: "40px", width: "564px" }} type="text" placeholder="Search Amazon.in" /></div>
+
+                    <div style={{
+                        height: "39px", display: "flex", backgroundColor: "white", marginTop: "0.49988px", background: "#FF9900", borderRadius: "0% 8% 8% 0%"
+                    }} ><IconButton><SearchIcon /></IconButton></div>
+                </div>
+
+
+
+
+
+
+
+                <Box className="box" gap={1} sx={{ color: "white", display: "flex", alignItems: "center" }}>
+                    <img
+                        src="https://flagcdn.com/w20/in.png"
+                        alt="India Flag"
+                        style={{ width: "20px", height: "15px" }}
+                    />
+                    <Box>
+                        En<ArrowDropDownIcon />
+                    </Box>
                 </Box>
-                <Typography className="box" sx={{ color: "white" }}> <img
-                    src="https://flagcdn.com/w20/in.png"
-                    alt="India Flag"
-                    style={{ width: "20px", height: "15px"}}
-                /> En<ArrowDropDownIcon /></Typography>
 
 
                 <Box sx={{ display: "flex", flexDirection: "column" }} className="box">
@@ -58,13 +95,13 @@ export default function DenseAppBar() {
 
                         </Typography>
                         <Typography sx={{ fontSize: "14px", fontWeight: "bold" }}>
-                            Returns<br />&Orders <ArrowDropDownIcon fontSize="small" />
+                        Returns<br/>Orders <ArrowDropDownIcon fontSize="small" />
                         </Typography>
 
                     </Box>
                 </Button>
 
-                <Box className="box"><Button sx={{ textTransform: "none",color: "white" }}><ShoppingCartOutlinedIcon sx={{ fontSize: "50px" }} />Cart</Button></Box>
+                <Box className="box"><Button sx={{ textTransform: "none", color: "white" }}><ShoppingCartOutlinedIcon sx={{ fontSize: "50px" }} />Cart</Button></Box>
 
             </Box>
         </>

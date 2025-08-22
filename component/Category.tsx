@@ -2,9 +2,9 @@ import { Card, CardContent, Box, Typography, Button } from "@mui/material";
 
 function ImageCard1() {
     return (
-        <Card sx={{ width: 500, p: 2 }}>
+        <Card sx={{ width: "464px", p: 2 }}>
             <CardContent>
-                <Typography variant="h5" sx={{ mb: 2 }}>
+                <Typography variant="h5" sx={{ mb: 2, color:"#0f1111",fontWeight:"700"}}>
                     Revamp your home in style
                 </Typography>
 
@@ -44,7 +44,7 @@ function ImageCard1() {
                             component="img"
                             src="category3.jpg"
                             alt="Lighting"
-                            sx={{ width: 140, height: 140, objectFit: "cover", borderRadius: 2 }}
+                            sx={{ width: 140, height: 140, borderRadius: 2 }}
                         />
                         <Typography variant="body2" sx={{ mt: 1 }}>
                             Lighting Solutions
@@ -59,9 +59,9 @@ function ImageCard1() {
 
 function ImageCard2() {
     return (
-        <Card sx={{ width: 500, p: 2 }}>
+        <Card sx={{ width: "464px", p: 2 }}>
             <CardContent>
-                <Typography variant="h5" sx={{ mb: 2 }}>
+                <Typography variant="h5" sx={{ mb: 2 ,color:"#0f1111",fontWeight:"700"}}>
                     Appliances for your home | Up to 55% off
                 </Typography>
 
@@ -71,7 +71,7 @@ function ImageCard2() {
                     <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
                         <Box
                             component="img"
-                            src="image4.jpg"
+                            src="image13.jpg"
                             alt="Cushion Cover"
                             sx={{ width: 140, height: 140, borderRadius: 2 }}
                         />
@@ -84,7 +84,7 @@ function ImageCard2() {
                     <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
                         <Box
                             component="img"
-                            src="image5.jpg"
+                            src="image15.jpg"
                             alt="Home Storage"
                             sx={{ width: 140, height: 140, borderRadius: 2 }}
                         />
@@ -99,7 +99,7 @@ function ImageCard2() {
                     <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
                         <Box
                             component="img"
-                            src="image6.jpg"
+                            src="image11.jpg"
                             alt="Lighting"
                             sx={{ width: 140, height: 140, objectFit: "cover", borderRadius: 2 }}
                         />
@@ -116,9 +116,9 @@ function ImageCard2() {
 
 function ImageCard3() {
     return (
-        <Card sx={{ width: 500, p: 2 }}>
+        <Card sx={{ width: "464px", p: 2 }}>
             <CardContent>
-                <Typography variant="h5" sx={{ mb: 2 }}>
+                <Typography variant="h5" sx={{ mb: 2, color:"#0f1111",fontWeight:"700" }}>
                     Starting ₹149 | Headphones
                 </Typography>
 
@@ -128,9 +128,9 @@ function ImageCard3() {
                     <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
                         <Box
                             component="img"
-                            src="image7.jpg"
+                            src="image12.jpg"
                             alt="Cushion Cover"
-                            sx={{ width: 140, height: 140, borderRadius: 2 }}
+                            sx={{ width: 140, height: 140, }}
                         />
                         <Typography variant="body2" sx={{ mt: 1 }}>
                             Starting ₹249 | boAt
@@ -141,9 +141,9 @@ function ImageCard3() {
                     <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
                         <Box
                             component="img"
-                            src="image8.jpg"
+                            src="image13.jpg"
                             alt="Home Storage"
-                            sx={{ width: 140, height: 140, borderRadius: 2 }}
+                            sx={{ width: 140, height: 140, }}
                         />
                         <Typography variant="body2" sx={{ mt: 1 }}>
                             Starting ₹649 | Noise
@@ -156,9 +156,9 @@ function ImageCard3() {
                     <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
                         <Box
                             component="img"
-                            src="image9.jpg"
+                            src="image11.jpg"
                             alt="Lighting"
-                            sx={{ width: 140, height: 140, objectFit: "cover", borderRadius: 2 }}
+                            sx={{ width: 140, height: 140, objectFit: "cover", }}
                         />
                         <Typography variant="body2" sx={{ mt: 1 }}>
                             Starting ₹149 | Zebronics
